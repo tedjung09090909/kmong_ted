@@ -1,6 +1,6 @@
 # 🚀 Kmong PO AI Workspace (`kmong_ted`)
 
-이 레포지토리는 **Gemini CLI**를 활용하여 크몽 PO의 기획 업무(PRD 작성, 로직 시각화, 기술 검토 등)를 자동화하고 가속화하기 위한 AI 워크스페이스입니다.
+이 레포지토리는 **Gemini CLI** 및 **Superset** 환경을 활용하여 크몽 PO의 기획 업무(PRD 작성, 로직 시각화, 기술 검토 등)를 자동화하고 가속화하기 위한 AI 워크스페이스입니다.
 
 ## 🪄 주요 기능 (AI Skills)
 
@@ -11,23 +11,24 @@
 
 ---
 
-## 🛠️ 팀원 설치 가이드 (Quick Start)
+## 🛠️ 팀원 사용 가이드 (Quick Start)
 
-동료 PO분들도 아래 단계를 통해 이 워크스페이스의 AI 기능을 즉시 사용할 수 있습니다.
+본 레포지토리는 AI 스킬 설정을 포함하고 있어, **슈퍼셋(Superset)** 환경의 제미니 에이전트를 사용하는 동료 PO분들은 별도의 설치 과정 없이 즉시 사용 가능합니다.
 
-### 1. Gemini CLI 설치
-(Gemini CLI가 설치되어 있어야 합니다)
-
-### 2. `prd-to-mermaid` 스킬 설치 (한 줄 복사)
+### 1. 최신 상태 업데이트
+프로젝트 폴더에서 최신 내용을 가져옵니다.
 ```bash
-gemini skills install https://github.com/tedjung09090909/kmong_ted/raw/psychedelic-cereal/prd-to-mermaid.skill --scope user
+git pull origin psychedelic-cereal
 ```
 
-### 3. 스킬 활성화
-Gemini CLI 세션에서 다음 명령어를 입력하세요.
+### 2. 스킬 활성화 (필요 시)
+제미니 에이전트가 새로운 스킬을 인식하도록 세션에서 다음 명령어를 입력하세요.
 ```bash
 /skills reload
 ```
+
+### 3. 바로 사용하기
+이제 제미니에게 기획서 분석이나 다이어그램 생성을 요청해 보세요! ☺️
 
 ---
 
